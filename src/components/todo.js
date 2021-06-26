@@ -22,7 +22,7 @@ function Todo(){
               return(
               <div className="eachitem" key={elem.id}>
                 <h4>{elem.data}</h4>
-                <i class="fas fa-trash-alt" onClick={()=>dispatch(deleteTodo(elem.id))}></i>
+                <button><i class="fas fa-trash-alt" onClick={()=>dispatch(deleteTodo(elem.id))}></i></button>
                 <hr />
               </div>
             )})
